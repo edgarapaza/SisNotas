@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="View/css/style.css">
+    <link rel="stylesheet" href="View/css/bootstrap.min.css">
     
     <title>SisNotas</title>
-     <link rel="icon" href="img/favicon-32x32.png">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/fontawesome.css">
-    <link rel="stylesheet" href="css/solid.css">
+     <link rel="icon" href="View/img/favicon-32x32.png">
+    <link rel="stylesheet" href="View/css/all.css">
+    <link rel="stylesheet" href="View/css/fontawesome.css">
+    <link rel="stylesheet" href="View/css/solid.css">
   
 </head>
 <body>
@@ -20,14 +20,14 @@
         <div class="col-sm-8 main-section">
             <div class="modal-content">
                 <div class="col-12 user-img">
-                    <div><img src="img/avatar.png" alt=""></div>
-                    <form class="col-12">
+                    <div><img src="View/img/avatar.png" alt=""></div>
+                    <form class="col-12" method="post" action="secure/secure.php">
                         <br>
                         <div class="form-group" id="user-group" >
-                            <input type="text" class="form-control" placeholder="Nombre de Usuario" >
+                            <input type="text" name="usuario" class="form-control" placeholder="Nombre de Usuario" >
                         </div>
                         <div class="form-group" id="contrasena-group" >
-                             <input type="password" class="form-control" placeholder="Contraseña">
+                             <input type="password" name="passwd" class="form-control" placeholder="Contraseña">
                         </div>
                         <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>  Ingresar</button>
                     </form>

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "../ModuloIngreso/core/Conexion.php";
+require_once "../core/Conexion.php";
 
 class LoginApp
 {
@@ -37,5 +37,9 @@ class LoginApp
 
 $usuario = $_POST['usuario'];
 $passwd = $_POST['passwd'];
-$log = new LoginApp();
-$log->ValidUser($usuario, $passwd);
+
+echo $usuario;
+echo $passwd;
+
+#$log = new LoginApp();
+#$log->ValidUser($usuario, $passwd);
