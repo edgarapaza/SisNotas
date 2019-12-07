@@ -4,106 +4,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Registar Matricula</title>
-    <link rel="icon" href="img/favicon-32x32.png">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style_matricula.css">
-    <link rel="stylesheet" href="css/solid.css">
-    <link rel="stylesheet" href="css/fontawesome.css">
-    
+    <title>Matricula</title>
 </head>
 <body>
-    <header style="height:70px"></header>
-    <div style="height: 30px;"></div>
+     <link rel="stylesheet" href="css/matricula.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/solid.css">
+
+
+    <h1 class="matricula">Registrar Matricula</h1>
+
     <div class="container">
+        <h2>Datos Personales</h2>
         <div class="row">
-            <div class="col-lg-12">    
-                <div class="card shadow-lg p-3 mb-5 bg-white">
-                    <div class="card-header">Registrar Matricula</div>
-                    <br>
-                   <div class="col"> <button class="btn-outline-primary btn-sm"">Agregar</button></div>
-            
-                    <div class="card-body">
-                        <form id="form1" action="procesar.php" method="post" class="needs-validation" novalidate> 
-                            <div class="form-row">
-                                <div class="col-md-4 mb-6">
-                                    <label for="nombre">Nombre</label>
-                                    <input name="nombre" type="text" class="form-control"  id="nombre" placeholder="Nombre" value="" required>
-                                    <div class="valid-feedback">¡Ok válidado!</div>
-                                    <div class="invalid-feedback">Complete el campo.</div>
-                                </div>
-                                <div class="col-md-4 mb-6">
-                                    <label for="apellido_paterno">Apellido Paterno</label>
-                                    <input name="apellido_paterno" type="text" class="form-control"  id="apellido_paterno" placeholder="Apellido Paterno" value="" required>
-                                    <div class="valid-feedback">¡Ok válidado!</div>
-                                    <div class="invalid-feedback">Complete el campo.</div>
-                                </div>
-                            
-                                <div class="col-md-4 mb-6">
-                                    <label for="apellido_materno">Apellido Materno</label>
-                                    <input name="apellido_materno" type="text" class="form-control" id="apellido_materno" placeholder="Apellido Materno" value="" required>
-                                    <div class="valid-feedback">¡Ok válidado!</div>
-                                    <div class="invalid-feedback">Complete el campo.</div>
-                                </div>
+                <div class="col-6">
+                        <form action="">
+                            <div class="form-group row">
+                               <label for="" class="col-4 col-form-label">ID:</label>
+                               <input type="text" name="idestudiante" id="idestudiante" placeholder="ID del estudiante" class="form-control col-7">
                             </div>
-                    
-                                <div class="form-row">
-                                    <div class="col-md-4 mb-6">
-                                        <label for="direccion">Dirección</label>
-                                        <input name="direccion" type="text" class="form-control" id="direccion" placeholder="Dirección" value="" required>
-                                        <div class="valid-feedback">¡Ok válidado!</div>
-                                        <div class="invalid-feedback">Complete el campo.</div>
-                                    </div>
-                                    <div class="col-md-4 mb-6">
-                                        <label for="dni">DNI</label>
-                                        <input name="dni" type="text" class="form-control" id="dni" placeholder="DNI" value="" required>
-                                        <div class="valid-feedback">¡Ok válidado!</div>
-                                        <div class="invalid-feedback">Complete el campo.</div>
-                                    </div>
-                                    <div class="col-md-4 mb-6">
-                                        <label for="sexo">Sexo</label>
-                                        <select id="inputState" class="form-control">
-                                            <option selected>Femenino</option>
-                                            <option selected>Masculino</option>
-                                            
-                                        </select>
-                                    </div>
-                                </div>
-
-                               <div class="form-row">
-                                    <div class="col-md-4 mb-3">
-                                        <label for="usuario">Nombre del usuario</label>
-                                        <div class="input-group">
-                                            <div class="input-group-prepend">
-                                                <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                            </div>
-                                            <input name="usuario" type="text" class="form-control" id="usuario" placeholder="Nombre del usuario" aria-describedby="inputGroupPrepend" requerid>
-                                            <div class="valid-feedback">¡Ok válidado!</div>
-                                            <div class="invalid-feedback">Complete el campo.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" name="invalidCheck" required>
-                                        <label class="form-check-label" for="invalidCheck">Acepto términos y condiciones</label>
-                                        <div class="valid-feedback">¡Aceptado!</div>
-                                    </div>
-                                </div>
-                                <button class="btn btn-primary" type="submit">Enviar</button>
-                                
-                        </form>
-                    </div>
+                            <div class="form-group row">
+                               <label for="" class="col-4 col-form-label">Nombres:</label>
+                               <input type="text" name="nestudiante" id="nestudiante" placeholder="Nombre del Estudiante" class="form-control col-7">
+                            </div>
+                            <div class="form-group row">
+                               <label for="" class="col-4 col-form-label">Apellidos:</label>
+                               <input type="text" name="aestudiante" id="aestudiante" placeholder="Apellidos del Estudiante" class="form-control col-7">
+                            </div>
+                            <div class="form-group row">
+                               <label for="" class="col-4 col-form-label">DNI:</label>
+                               <input type="text" name="dniestudiante" id="dniestudiante" placeholder="DNI" class="form-control col-7">
+                            </div>
+                            <div class="form-group row">
+                              <label for="" class="col-4 col-form-label">Sexo:</label>
+                               <select class="form-control col-7" name="sexoestudiante" id="sexoestudiante" >
+                                   <option selected>Escoger...</option>
+                                   <option value="1">Femenino</option>
+                                   <option value="2">Masculino</option>
+                               </select>
+                            </div>
+                            <div class="form-group row">
+                               <label for="" class="col-4 col-form-label">Telefono:</label>
+                               <input type="text" name="telestudiante" id="telestudiante" placeholder="Telefono" class="form-control col-7">
+                            </div>
+                            <div class="form-group row">
+                               <label for="" class="col-4 col-form-label">Fecha de Nacimiento:</label>
+                               <input type="date" name="fnacimiento" id="fnacimiento" placeholder="Fecha de Nacimiento" class="form-control col-7">
+                            </div>
+                            <div class="form-group row">
+                               <label for="" class="col-4 col-form-label">Nacionalidad:</label>
+                               <input type="text" name="nacionalidad" id="nacionalidad" placeholder="Nacionalidad" class="form-control col-7">
+                            </div>
+                     </form>
                 </div>
-            </div>     
-        </div>
-    </div>    
 
+                 <div class="col-6">
+                 <form action="">
+                     <div class="form-group row">
+                        <label for="" class="col-4 col-form-label">Departamento:</label>
+                        <select class="form-control col-7" name="departamento" id="departamento" >
+                            <option selected>Escoger...</option>
+                            <option value="1">Puno</option>
+                            <option value="2">Julica</option>
+                        </select>
+                     </div>
+                     <div class="form-group row">
+                        <label for="" class="col-4 col-form-label">Provincia:</label>
+                        <select class="form-control col-7" name="provincia" id="provincia" >
+                            <option selected>Escoger...</option>
+                            <option value="1">Puno</option>
+                            <option value="2">Julica</option>
+                        </select>
+                     </div>
+                     <div class="form-group row">
+                        <label for="" class="col-4 col-form-label">Distrito:</label>
+                        <select class="form-control col-7" name="distrito" id="distrito" >
+                            <option selected>Escoger...</option>
+                            <option value="1">Puno</option>
+                            <option value="2">Julica</option>
+                        </select>
+                     </div>
+                     <div class="form-group row">
+                        <label for="" class="col-4 col-form-label">Dirección:</label>
+                        <input type="text" name="direccion" id="direccion" placeholder="Dirección" class="form-control col-7">
+                     </div>
+                     <div class="form-group row">
+                        <label for="" class="col-4 col-form-label">N° de emergencia:</label>
+                        <input type="text" name="nemergencia" id="nemergencia" placeholder="N° de emergencia" class="form-control col-7">
+                     </div>
+                     <div class="form-group row">
+                        <label for="" class="col-4 col-form-label">Carrera/Especialidad:</label>
+                        <select class="form-control col-7" name="caes" id="caes" >
+                            <option selected>Escoger...</option>
+                            <option value="1">Educación Inicial</option>
+                            <option value="2">Educación Primaria</option>
+                            <option value="3">Educ. Sec. Comunicación</option>
+                            <option value="3">Educ. Sec. Ciencias Sociales</option>
+                            <option value="3">Educ. Sec. CTA</option>
+                            <option value="3">Educ. Sec. Matemática</option>
+                            <option value="4">Computación e Informático</option>
+                            <option value="5">Educación Física</option>
+                        </select>
+                     </div>
+                     <div class="form-group row">
+                        <label for="" class="col-4 col-form-label">Semestre:</label>
+                        <select class="form-control col-7" name="caes" id="caes" >
+                            <option selected>Escoger...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="3">4</option>
+                            <option value="4">5</option>
+                            <option value="5">6</option>
+                            <option value="6">7</option>
+                            <option value="7">8</option>
+                            <option value="8">9</option>
+                            <option value="9">10</option>
+                        </select>
+                     </div>
+                  </form>
+             </div>
+
+             <div class="botones text-center col-12">
+                        <button class="btn btn-primary" type="submit" value="Input">Nuevo</button>
+                        <button class="btn btn-success" type="submit" value="Input">Editar</button>
+                        <button class="btn btn-warning" type="submit" value="Input">Guardar</button>
+                        <button class="btn btn-danger" type="reset" value="Rest">Eliminar</button>
+                        <button class="btn btn-info" type="reset" value="Input">Guardar</button>
+            </div>
+
+
+            <div class="col-12">
+                        <table class="table table-borderless table-dark">
+                            <thead>
+                                <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">ID</th>
+                                <th scope="col">Nombres</th>
+                                <th scope="col">Apellidos</th>
+                                <th scope="col">DNI</th>
+                                <th scope="col">Dirección</th>
+                                <th scope="col">Telefono</th>
+                                <th scope="col">Carrera/Especialidad</th>
+                                    <th scope="col">Semestre</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <th scope="row">1</th>
+                                <td>0001</td>
+                                <td>ABC</td>
+                                <td>ABC</td>
+                                <td>ABC</td>
+                                <td>ABC</td>
+                                <td>ABC</td>
+                                <td>ABC</td>
+                                <td>ABC</td>
+                                </tr>
+                                <tr>
+                                <th scope="row">2</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                </tr>
+                                <tr>
+                                <th scope="row">3</th>
+                                <td></td>
+                                <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                 </div>
+        </div>
+    </div>
 
     <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/fontawesome.js"></script>
     <script src="js/popper.min.js"></script>
-    <script src="js/codigo.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.js"></script>
 </body>
 </html>

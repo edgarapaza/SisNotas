@@ -1,0 +1,22 @@
+/* *{
+    border: 1px solid salmon;
+} */
+
+body{
+    background: url(../img/estudiante1.png) no-repeat center center fixed;
+    
+}
+.estudiante{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 70px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.col-6{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+.btn {
+    margin: 10px 15px;
+}

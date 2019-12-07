@@ -1,0 +1,14 @@
+
+body{
+    background: url(../img/imagen.png) no-repeat center center fixed;
+}
+
+.col-6 {
+   margin: 0 auto;
+   margin-top: 65px;
+   font-weight: bold;
+}
+
+.botones{
+    margin: 50px 15px;
+}

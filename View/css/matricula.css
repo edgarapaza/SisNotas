@@ -1,0 +1,16 @@
+body{
+    background: url(../img/fondo.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.matricula{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.btn {
+    margin: 10px 15px;
+}

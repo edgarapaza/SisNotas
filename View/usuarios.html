@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="css/usuarios.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/solid.css">
+</head>
+<body>
+    <h1 class="usuarios">Registar Usuarios</h1>
+    <div class="container">
+        <h2>Datos Generales</h2>
+        <br>
+         <div class="row">
+             <div class="col-6">
+                 <form action="">
+                     <div class="form-group row">
+                        <label for="" class="col-3 col-form-label">ID:</label>
+                        <input type="text" name="idusuarios" id="idusuarios" placeholder="ID del usuario" class="form-control col-9">
+                     </div>
+                     <div class="form-group row">
+                        <label for="" class="col-3 col-form-label">Nombres:</label>
+                        <input type="text" name="nusuarios" id="nusuarios" placeholder="Nombre del usuario" class="form-control col-9">
+                     </div>
+                     <div class="form-group row">
+                        <label for="" class="col-3 col-form-label">Apellidos:</label>
+                        <input type="text" name="ausuarios" id="ausuarios" placeholder="Apellidos del usuario" class="form-control col-9">
+                     </div>
+                     <div class="form-group row">
+                        <label for="" class="col-3 col-form-label">DNI:</label>
+                        <input type="text" name="dniusuario" id="dniusuarios" placeholder="DNI" class="form-control col-9">
+                     </div>
+                     <div class="form-group row">
+                       <label for="" class="col-3 col-form-label">Docente:</label>
+                        <select class="form-control col-9" name="ddocente" id="ddocente" >
+                            <option selected>Escoger...</option>
+                            <option value="1">Educación Inicial</option>
+                            <option value="2">Educación Primaria</option>
+                            <option value="3">Educ. Sec. Comunicación</option>
+                            <option value="3">Educ. Sec. Ciencias Sociales</option>
+                            <option value="3">Educ. Sec. CTA</option>
+                            <option value="3">Educ. Sec. Matemática</option>
+                            <option value="4">Computación e Informático</option>
+                            <option value="5">Educación Física</option>
+                        </select>
+                     </div>
+                     <div class="form-group row">
+                        <label for="" class="col-3 col-form-label">Mención:</label>
+                        <input type="text" name="mencion" id="mencion" placeholder="Mención" class="form-control col-9">
+                     </div>
+             </div>
+
+              <div class="col-6">
+                 <form action="">
+                     <div class="form-group row">
+                        <label for="" class="col-3 col-form-label">Usuario:</label>
+                        <input type="text" name="usuario1" id="usuario1" placeholder="Usuario" class="form-control col-9">
+                     </div>
+                     
+                        <div class="form-group row">
+                            <label for="" class="col-3 col-form-label">Clave Nueva: </label>
+                            <input type="password" id="clavenueva" class="form-control col-9 " aria-placeholder="Clave Nueva">
+                            <small id="passwordinline" class="text-muted">
+                                <!-- Debe tener entre 8-20 caracteres -->
+                            </small>
+                        </div>
+                
+                     <div class="form-group row">
+                        <label for="" class="col-3 col-form-label">Distrito:</label>
+                        <select class="form-control col-9" name="distrito" id="distrito" >
+                            <option selected>Escoger...</option>
+                            <option value="1">Administrador del Sistema</option>
+                            <option value="2">Director</option>
+                            <option value="2">Secretaria</option>
+                            <option value="2">Estudiante</option>
+                        </select>
+                     </div>
+             </div>
+
+             <div class="botones text-center col-12">
+                        <button class="btn btn-primary" type="submit" value="Input">Nuevo</button>
+                        <button class="btn btn-success" type="submit" value="Input">Editar</button>
+                        <button class="btn btn-warning" type="submit" value="Input">Guardar</button>
+                        <button class="btn btn-danger" type="reset" value="Rest">Eliminar</button>
+                        <button class="btn btn-info" type="reset" value="Input">Guardar</button>
+            </div>
+
+             <div class="col-12">
+                        <table class="table table-borderless table-dark">
+                            <thead>
+                                <tr class="table-warning">
+                                    <th class="" scope="col">#</th>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Nombres</th>
+                                    <th scope="col">Apellidos</th>
+                                    <th scope="col">DNI</th>
+                                    <th scope="col">Dirección</th>
+                                    <th scope="col">Telefono</th>
+                                    <th scope="col">Especialidad</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-success">
+                                    <th scope="row">1</th>
+                                    <td>0001</td>
+                                    <td>ABC</td>
+                                    <td>ABC</td>
+                                    <td>ABC</td>
+                                    <td>ABC</td>
+                                    <td>ABC</td>
+                                    <td>ABC</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                 </div>
+         </div>
+    </div>
+</body>
+</html>

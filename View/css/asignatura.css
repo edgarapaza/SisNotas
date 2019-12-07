@@ -1,0 +1,19 @@
+
+body{
+    background: url(../img/fondo.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+
+.container{
+    margin-top: 100px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.table {
+    background:	#E6E6FA;
+    opacity: 0.78;
+    text-align: center;
+}	
+.btn {
+    margin: 10px 15px;
+}

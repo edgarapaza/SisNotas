@@ -1,0 +1,19 @@
+
+body{
+    background: url(../img/clases.jpg) no-repeat center center fixed;
+     background-size: cover
+}
+
+
+
+
+.usuarios{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 70px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.btn {
+    margin: 10px 15px;
+}
