@@ -4,7 +4,10 @@ body{
      background-size: cover
 }
 
-
+.col-12 .tablita .table{
+    font-size: 15px;
+    color: black;
+}
 
 
 .usuarios{
