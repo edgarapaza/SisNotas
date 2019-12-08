@@ -1,0 +1,22 @@
+
+
+body{
+    background: url(../img/calificaciones.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.calificaciones{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 20px;
+    text-align: center;
+    color: black
+}
+
+.container1{
+    padding-left: 250PX;
+    margin-top: 40px;
+}
+.btn {
+    margin: 10px 15px;
+}
