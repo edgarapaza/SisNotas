@@ -19,113 +19,86 @@
     <div class="container">
         <h2>Datos Personales</h2>
         <div class="row">
-                <div class="col-6">
+                <div class="col-12">
                         <form action="">
                             <div class="form-group row">
-                               <label for="" class="col-4 col-form-label">ID:</label>
-                               <input type="text" name="idestudiante" id="idestudiante" placeholder="ID del estudiante" class="form-control col-7">
+                               <label for="" class="col-4 col-form-label">Codigo del estudiante:</label>
+                               <input type="text" name="codestudiante" id="codestudiante" placeholder="Codigo del estudiante" class="form-control col-7">
                             </div>
-                            <div class="form-group row">
-                               <label for="" class="col-4 col-form-label">Nombres:</label>
-                               <input type="text" name="nestudiante" id="nestudiante" placeholder="Nombre del Estudiante" class="form-control col-7">
-                            </div>
-                            <div class="form-group row">
-                               <label for="" class="col-4 col-form-label">Apellidos:</label>
-                               <input type="text" name="aestudiante" id="aestudiante" placeholder="Apellidos del Estudiante" class="form-control col-7">
-                            </div>
-                            <div class="form-group row">
-                               <label for="" class="col-4 col-form-label">DNI:</label>
-                               <input type="text" name="dniestudiante" id="dniestudiante" placeholder="DNI" class="form-control col-7">
-                            </div>
-                            <div class="form-group row">
-                              <label for="" class="col-4 col-form-label">Sexo:</label>
-                               <select class="form-control col-7" name="sexoestudiante" id="sexoestudiante" >
-                                   <option selected>Escoger...</option>
-                                   <option value="1">Femenino</option>
-                                   <option value="2">Masculino</option>
-                               </select>
-                            </div>
-                            <div class="form-group row">
-                               <label for="" class="col-4 col-form-label">Telefono:</label>
-                               <input type="text" name="telestudiante" id="telestudiante" placeholder="Telefono" class="form-control col-7">
-                            </div>
-                            <div class="form-group row">
-                               <label for="" class="col-4 col-form-label">Fecha de Nacimiento:</label>
+                           <div class="form-group row">
+                           <label for="" class="col-4 col-form-label">Carrera/Especialidad:</label>
+                           <select class="form-control col-7" name="caes" id="caes" >
+                              <option selected>Escoger...</option>
+                              <option value="1">Educación Inicial</option>
+                              <option value="2">Educación Primaria</option>
+                              <option value="3">Educ. Sec. Comunicación</option>
+                              <option value="3">Educ. Sec. Ciencias Sociales</option>
+                              <option value="3">Educ. Sec. CTA</option>
+                              <option value="3">Educ. Sec. Matemática</option>
+                              <option value="4">Computación e Informático</option>
+                              <option value="5">Educación Física</option>
+                           </select>
+                          </div>
+                          <div class="form-group row">
+                           <label for="" class="col-4 col-form-label">Semestre:</label>
+                           <select class="form-control col-7" name="semestre" id="semestre" >
+                              <option selected>Escoger...</option>
+                              <option value="1">I</option>
+                              <option value="2">II</option>
+                              <option value="3">III</option>
+                              <option value="3">IV</option>
+                              <option value="4">V</option>
+                              <option value="5">VI</option>
+                              <option value="6">VII</option>
+                              <option value="7">VIII</option>
+                              <option value="8">IX</option>
+                              <option value="9">X</option>
+                           </select>
+                           </div>
+                           <div class="form-group row">
+                           <label for="" class="col-4 col-form-label">Docente:</label>
+                           <select class="form-control col-7" name="caes" id="caes" >
+                              <option selected>Escoger...</option>
+                              <option value="1">APAZA PINTO, Hernán Rolando</option>
+                              <option value="2">AYLLÓN GEMIO, Victor Orlando </option>
+                              <option value="3"> CARPIO MIRANDA, Nilda Marcela</option>
+                              <option value="3">MONTALVO GUTIERREZ, Eleazar Rafael 	</option>
+                              <option value="4">PAZO PRIETO, María Elena</option>
+                              <option value="5"> QUISPE APAZA, Luis</option>
+                              <option value="6">RAMOS ROJAS, María Nelly</option>
+                              <option value="7">ROJAS GORDILLO, Mirian María</option>
+                              <option value="8">ARDILES CATACORA, Marco Antonio</option>
+                              <option value="9">CASTILLO CÁCERES, Beltrán Erasmo</option>
+                              <option value="10">DELGADO RAMOS, Ricardo</option>
+                              <option value="11">PARICAHUA MAMANI, Vilma Rosaura</option>
+                              <option value="12">PINEDA MACEDO, Eliana Honoria</option>
+                              <option value="13">RAMIREZ RAMIREZ, Dominga Vianney </option>
+                              <option value="14">RAMOS ORTEGA, Roger Marco </option>
+                              <option value="15">VILCAPAZA CCUNO, Jesús</option>
+                              <option value="16">AROHUANCA QUISPE, Wilmer Andrés 	  </option>
+                              <option value="17">CHOQUE MAMANI, Seyli Niesleyni</option>
+                              <option value="18">MAMANI MARON, Beatríz Vilma</option>
+                              <option value="19">MANSILLA PARI, Juan José </option>
+                              <option value="20">OLIVERA CHURA, Javier David</option>
+                              <option value="21">PEREZ VALLE, Giuliana Claudia</option>
+                              <option value="22">TURPO AROQUIPA, Einar</option>
+                              <option value="23">CAZORLA AGUIRRE, Miriam Milagros</option>
+                              <option value="24">FLORES QUISPE, judith Gabriela</option>
+                              <option value="25">MAMANI PARI, German</option>
+                              <option value="26">OLIVERA CONDORI, Erika</option>
+                              <option value="27"> PARI YANA, Yeni </option>
+                              <option value="28">ROJAS MAYTA, Celestina </option>
+                              <option value="29">VALVERDE HERRERA, Elizabeth Jesús</option>
+                           </select>
+                           </div>
+                           <div class="form-group row">
+                               <label for="" class="col-4 col-form-label">Fecha de Matricula:</label>
                                <input type="date" name="fnacimiento" id="fnacimiento" placeholder="Fecha de Nacimiento" class="form-control col-7">
-                            </div>
-                            <div class="form-group row">
-                               <label for="" class="col-4 col-form-label">Nacionalidad:</label>
-                               <input type="text" name="nacionalidad" id="nacionalidad" placeholder="Nacionalidad" class="form-control col-7">
-                            </div>
+                           </div>
                      </form>
                 </div>
 
-                 <div class="col-6">
-                 <form action="">
-                     <div class="form-group row">
-                        <label for="" class="col-4 col-form-label">Departamento:</label>
-                        <select class="form-control col-7" name="departamento" id="departamento" >
-                            <option selected>Escoger...</option>
-                            <option value="1">Puno</option>
-                            <option value="2">Julica</option>
-                        </select>
-                     </div>
-                     <div class="form-group row">
-                        <label for="" class="col-4 col-form-label">Provincia:</label>
-                        <select class="form-control col-7" name="provincia" id="provincia" >
-                            <option selected>Escoger...</option>
-                            <option value="1">Puno</option>
-                            <option value="2">Julica</option>
-                        </select>
-                     </div>
-                     <div class="form-group row">
-                        <label for="" class="col-4 col-form-label">Distrito:</label>
-                        <select class="form-control col-7" name="distrito" id="distrito" >
-                            <option selected>Escoger...</option>
-                            <option value="1">Puno</option>
-                            <option value="2">Julica</option>
-                        </select>
-                     </div>
-                     <div class="form-group row">
-                        <label for="" class="col-4 col-form-label">Dirección:</label>
-                        <input type="text" name="direccion" id="direccion" placeholder="Dirección" class="form-control col-7">
-                     </div>
-                     <div class="form-group row">
-                        <label for="" class="col-4 col-form-label">N° de emergencia:</label>
-                        <input type="text" name="nemergencia" id="nemergencia" placeholder="N° de emergencia" class="form-control col-7">
-                     </div>
-                     <div class="form-group row">
-                        <label for="" class="col-4 col-form-label">Carrera/Especialidad:</label>
-                        <select class="form-control col-7" name="caes" id="caes" >
-                            <option selected>Escoger...</option>
-                            <option value="1">Educación Inicial</option>
-                            <option value="2">Educación Primaria</option>
-                            <option value="3">Educ. Sec. Comunicación</option>
-                            <option value="3">Educ. Sec. Ciencias Sociales</option>
-                            <option value="3">Educ. Sec. CTA</option>
-                            <option value="3">Educ. Sec. Matemática</option>
-                            <option value="4">Computación e Informático</option>
-                            <option value="5">Educación Física</option>
-                        </select>
-                     </div>
-                     <div class="form-group row">
-                        <label for="" class="col-4 col-form-label">Semestre:</label>
-                        <select class="form-control col-7" name="caes" id="caes" >
-                            <option selected>Escoger...</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="3">4</option>
-                            <option value="4">5</option>
-                            <option value="5">6</option>
-                            <option value="6">7</option>
-                            <option value="7">8</option>
-                            <option value="8">9</option>
-                            <option value="9">10</option>
-                        </select>
-                     </div>
-                  </form>
-             </div>
+               
 
              <div class="botones text-center col-12">
                         <button class="btn btn-primary" type="submit" value="Input">Nuevo</button>
@@ -140,37 +113,36 @@
                         <table class="table table-borderless table-dark">
                             <thead>
                                 <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">ID</th>
-                                <th scope="col">Nombres</th>
-                                <th scope="col">Apellidos</th>
-                                <th scope="col">DNI</th>
-                                <th scope="col">Dirección</th>
-                                <th scope="col">Telefono</th>
-                                <th scope="col">Carrera/Especialidad</th>
-                                    <th scope="col">Semestre</th>
+                                <th scope="#"></th>
+                                <th scope="col">Codigo del estudiante</th>
+                                <th scope="col">Carrera del estudiante</th>
+                                <th scope="col">Semestre</th>
+                                <th scope="col">Docente</th>
+                                <th scope="col">Fecha de Matricula</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                 <th scope="row">1</th>
-                                <td>0001</td>
-                                <td>ABC</td>
-                                <td>ABC</td>
-                                <td>ABC</td>
-                                <td>ABC</td>
-                                <td>ABC</td>
-                                <td>ABC</td>
-                                <td>ABC</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 </tr>
                                 <tr>
                                 <th scope="row">2</th>
                                 <td></td>
                                 <td></td>
                                 <td></td>
+                                <td></td>
+                                <td></td>
                                 </tr>
                                 <tr>
                                 <th scope="row">3</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 </tr>
