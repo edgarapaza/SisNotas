@@ -1,25 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Menú Principal</title>
-    <link rel="icon" href="img/favicon-32x32.png">
-    <link rel="stylesheet" href="css/style_menu_prueba.css">
-    <link rel="stylesheet" href="css/style_menu_prueba_1.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/fontawesome.css">
-    <link rel="stylesheet" href="css/solid.css">
-</head>
-<body>
-    
+<?php
+require("header.php");
+?>
+
         <div class="card text-light" >
             <div class="card-img-overlay">
                 <h1>Pedagógico Público Puno</h1>
                 <h2>"Alma Mater del Magisterio Regional</h2>
-                <a href="#" class="btn btn-primary ">Cerrar Sesion</a>
             </div>
         </div>
 
@@ -28,18 +14,18 @@
             <img src="img/estudiante.jpg" class="car-img-top" alt="">
             <div class="card-body">
                 <h5>Estudiante</h5>
-                <a href="index_usuario.html" class="btn btn-primary btn-lg" role="button">Ingresar</a>
+                <a href="usuario.html" class="btn btn-primary btn-lg" role="button">Ingresar</a>
             </div>
            </div>
-    
+
            <div class="tarjeta">
             <img src="img/matricula.png" class="car-img-top" alt="">
             <div class="card-body">
                 <h5>Matricula</h5>
-                <a href="index_matricula.html" class="btn btn-success btn-lg">Ingresar</a>
+                <a href="matricula.html" class="btn btn-success btn-lg">Ingresar</a>
             </div>
            </div>
-    
+
            <div class="tarjeta">
             <img src="img/notas.png" class="car-img-top" alt="">
             <div class="card-body">
@@ -47,7 +33,7 @@
                 <a href="#" class="btn btn-danger btn-lg">Ingresar</a>
             </div>
            </div>
-        
+
 
                <div class="tarjeta">
                 <img src="img/docente.jpg" class="car-img-top" alt="">
@@ -56,7 +42,7 @@
                     <a href="#" class="btn btn-warning btn-lg">Ingresar</button></a>
                 </div>
                </div>
-        
+
                <div class="tarjeta">
                 <img src="img/horario_clases.png" class="car-img-top" alt="">
                 <div class="card-body">
@@ -64,8 +50,8 @@
                     <a href="#" class="btn btn-info btn-lg">Ingresar</a>
                 </div>
                </div>
-        
-            
+
+
                <div class="tarjeta">
                 <img src="img/clases.jpg" class="car-img-top" alt="">
                 <div class="card-body">
@@ -81,7 +67,7 @@
                     <a href="#" class="btn btn-warning btn-lg">Ingresar</a>
                 </div>
                </div>
-        
+
                <div class="tarjeta">
                 <img src="img/pagos.jpg" class="car-img-top" alt="">
                 <div class="card-body">
@@ -89,7 +75,7 @@
                     <a href="#" class="btn btn-info btn-lg">Ingresar</a>
                 </div>
                </div>
-        
+
                <div class="tarjeta">
                 <img src="img/apoderado.png" class="car-img-top" alt="">
                 <div class="card-body">
@@ -108,36 +94,12 @@
 
 
            </div>
-    
-    
-           
-               
-           
-    
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/all.js"></script>
-
 
 </body>
 </html>

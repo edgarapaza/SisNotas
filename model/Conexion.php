@@ -4,7 +4,7 @@ class Conexion {
 
 	public function Conectar() {
 		#require_once ("config.php");
-		$mysqli = new mysqli("localhost","root", "", "pedagogico");
+		$mysqli = new mysqli("localhost","usuario", "A@dmin0215.,$", "pedagogico");
 		$mysqli->set_charset("utf8");
 
 		if ($mysqli->connect_errno) {

@@ -1,45 +1,37 @@
 <?php
-session_start();
-require_once "../core/Conexion.php";
-
-class LoginApp
-{
-    private $linkclass;
-    private $conn;
-        
-    function __construct(){
-            
-        $this->linkclass = $conection = new Conexion();
-        $this->conn = $conection->Conectar();
-        return $this->conn;
-    }
-
-    function ValidUser($usuario, $password)
-    {
-        $sql = "SELECT idpersonal, state_usu, niv_usu FROM catalogo.login WHERE username = '$usuario' AND passwd = MD5('$password');";
-        $data = $this->conn->query($sql);
-        $numResult = $data->num_rows;
-        $fila = $data->fetch_array();
-        
-        if($numResult > 0){
-            #echo "Dato: ".$fila[0];
-            $_SESSION['personal'] = $fila[0];
-            header("Location: ../ModuloIngreso/index.php");
-        }else{
-            #echo "Datos incorrectos";
-            header("Location: ../index.html");
-        }
-        
-        $this->linkclass->CerrarConexion();
-        
-    }
-}
-
+require("../model/loginapp.model.php");
 $usuario = $_POST['usuario'];
 $passwd = $_POST['passwd'];
 
-echo $usuario;
-echo $passwd;
+$log = new LoginApp();
+$data = $log->ValidUser($usuario, $passwd);
 
-#$log = new LoginApp();
-#$log->ValidUser($usuario, $passwd);
+    $numResult = $data->num_rows;
+    $fila = $data->fetch_array(MYSQLI_ASSOC);
+
+    if($numResult > 0){
+        if($fila['stateuser'] == 1){
+            switch ($fila['nivel']) {
+                case 1: //Administrador
+                    $_SESSION['administrador'] = $fila['idpersonal'];
+                    header("Location: ../admin/index.html");
+
+                    break;
+                case 2: //Personal
+                    $_SESSION['personal'] = $fila['idpersonal'];
+                    header("Location: ../View/index.html");
+                    break;
+                default:
+                    header("Location: ../index.html");
+                    break;
+            }
+
+        }else{
+            echo "El usuario no esta activo";
+        }
+    }else{
+        #echo "Datos incorrectos";
+        header("Location: ../index.html");
+    }
+
+
