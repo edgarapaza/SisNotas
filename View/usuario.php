@@ -56,7 +56,7 @@ $data = $alumno->ListadoAlumnos();
 
 
     <div class="container">
-      <div class="mx-auto col-sm-8 main-section" id="myTab" role="tablist">
+      <div class="mx-auto col-sm-12 main-section" id="myTab" role="tablist">
 
         <ul class="nav nav-tabs justify-content-end">
           <li class="nav-item">

@@ -2,12 +2,12 @@
 require("../model/newalumno.model.php");
 $alumno = new Alumno();
 
-$nombre     = $_POST['nombre'];
-$paterno    = $_POST['paterno'];
-$materno    = $_POST['materno'];
-$email      = $_POST['email'];
-$nomusuario = $_POST['nomusuario'];
-$pass1      = $_POST['pass1'];
+$nombre     = trim(strtoupper($_POST['nombre']));
+$paterno    = trim(strtoupper($_POST['paterno']));
+$materno    = trim(strtoupper($_POST['materno']));
+$email      = trim(strtolower($_POST['email']));
+$nomusuario = trim(strtolower($_POST['nomusuario']));
+$pass1      = trim(strtolower($_POST['pass1']));
 
 
 if(!empty($nombre) && !empty($paterno) && !empty($materno) && !empty($nomusuario) && !empty($pass1))
