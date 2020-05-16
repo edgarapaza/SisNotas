@@ -1,47 +1,6 @@
 <?php
 require("header.php");
 ?>
-<link rel="stylesheet" href="css/menu.css">
-<style>
-
-img{
-    width: 106px;
-}
-.contenedor{
-    padding: 10px;
-}
-.card-title {
-  text-align: center;
-}
-.card-container{
-    /* border: 1px solid red; */
-    max-width: 1224px;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-}
-
-.tarjeta{
-    border: 2px solid black;
-    background-color:rgb(89.8%, 89.8%, 89.8%);
-    height: 150px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-.card-body{
-    /* border: 1px solid green; */
-    text-align: center;
-}
-
-@media screen and(min-width: 462px)
-{
-
-}
-
-</style>
 
     <div class="contenedor">
 
@@ -73,7 +32,7 @@ img{
                 <img src="img/notas.png" alt="">
                 <div class="card-body">
                     <h5>Notas</h5>
-                    <a href="#" class="btn btn-danger btn-lg">Ingresar</a>
+                    <a href="calificaciones.php" class="btn btn-danger btn-lg">Ingresar</a>
                 </div>
             </div>
 
@@ -81,7 +40,7 @@ img{
                 <img src="img/docente.jpg" alt="">
                 <div class="card-body">
                     <h5>Docentes</h5>
-                    <a href="#" class="btn btn-warning btn-lg">Ingresar</button></a>
+                    <a href="docentes.php" class="btn btn-warning btn-lg">Ingresar</button></a>
                 </div>
             </div>
 
@@ -97,7 +56,7 @@ img{
                 <img src="img/clases.jpg" alt="">
                 <div class="card-body">
                     <h5>Clases</h5>
-                    <a href="#" class="btn btn-secondary btn-lg">Ingresar</a>
+                    <a href="asignatura.php" class="btn btn-secondary btn-lg">Ingresar</a>
                 </div>
             </div>
 
@@ -105,7 +64,7 @@ img{
                 <img src="img/cursos.png" alt="">
                 <div class="card-body">
                     <h5>Cursos</h5>
-                    <a href="#" class="btn btn-warning btn-lg">Ingresar</a>
+                    <a href="curso.php" class="btn btn-warning btn-lg">Ingresar</a>
                 </div>
             </div>
 
@@ -113,7 +72,7 @@ img{
                 <img src="img/pagos.jpg" alt="">
                 <div class="card-body">
                     <h5>Pagos</h5>
-                    <a href="#" class="btn btn-info btn-lg">Ingresar</a>
+                    <a href="pagos.php" class="btn btn-info btn-lg">Ingresar</a>
                 </div>
             </div>
 
