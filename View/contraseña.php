@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cambiar contraseña</title>
-    <link rel="icon" href="img/favicon-32x32.png">
-    <link rel="stylesheet" href="css/contraseña.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/fontawesome.css">
-    <link rel="stylesheet" href="css/solid.css">
-</head>
-<body>
+<?php
+include("header.php");
+?>
     <h1 class="text-center">I.S.P.P</h1>
     <div class="container">
          <div class="col-6">
@@ -53,7 +41,7 @@
         </div>
     </div>
  </div>
-     
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
