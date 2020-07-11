@@ -80,7 +80,7 @@ $data = $alumno->ListadoAlumnos();
               role="tab"
               aria-controls="form"
               aria-selected="true"
-              >Formulario</a
+              >Nuevo Estudiante</a
             >
           </li>
         </ul>
@@ -106,6 +106,7 @@ $data = $alumno->ListadoAlumnos();
                     <thead class="thead-light">
                       <tr>
                         <th scope="col">#</th>
+                        <th scope="col">Cod. Estud.</th>
                         <th scope="col">Nombre</th>
                         <th scope="col">A_Paterno</th>
                         <th scope="col">A_Materno</th>
@@ -122,6 +123,7 @@ $data = $alumno->ListadoAlumnos();
                       ?>
                       <tr>
                         <th scope="row"><?php echo $i;?></th>
+                        <td><?php echo $fila['idstudent'];?></td>
                         <td><?php echo $fila['alu_nombre'];?></td>
                         <td><?php echo $fila['alu_paterno'];?></td>
                         <td><?php echo $fila['alu_materno'];?></td>

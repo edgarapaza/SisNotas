@@ -32,6 +32,13 @@ require("header.php");
                 <img src="img/notas.png" alt="">
                 <div class="card-body">
                     <h5>Notas</h5>
+                    <a href="notas.php" class="btn btn-danger btn-lg">Ingresar</a>
+                </div>
+            </div>
+            <div class="tarjeta">
+                <img src="img/notas.png" alt="">
+                <div class="card-body">
+                    <h5>Listado de Notas</h5>
                     <a href="calificaciones.php" class="btn btn-danger btn-lg">Ingresar</a>
                 </div>
             </div>
