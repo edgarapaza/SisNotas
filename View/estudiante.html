@@ -13,23 +13,24 @@
     <link rel="stylesheet" href="css/solid.css">
 </head>
 <body>
-     <h1 class="estudiante">Registar Estudiante</h1>
+     <h1 class="estudiante">Formulario del Estudiante</h1>
     <div class="container">
         <h2>Datos Generales</h2>
+        <br>
          <div class="row">
              <div class="col-6">
                  <form action="">
                      <div class="form-group row">
                         <label for="" class="col-3 col-form-label">ID:</label>
-                        <input type="text" name="id" id="id" placeholder="ID del docente" class="form-control col-9">
+                        <input type="text" name="id" id="id" placeholder="ID del estudiante" class="form-control col-9">
                      </div>
                      <div class="form-group row">
                         <label for="" class="col-3 col-form-label">Nombres:</label>
-                        <input type="text" name="ndocente" id="docente" placeholder="Nombre del docente" class="form-control col-9">
+                        <input type="text" name="nestudiante" id="nestudiante" placeholder="Nombres" class="form-control col-9">
                      </div>
                      <div class="form-group row">
                         <label for="" class="col-3 col-form-label">Apellidos:</label>
-                        <input type="text" name="adocente" id="adocente" placeholder="Apellidos del docente" class="form-control col-9">
+                        <input type="text" name="aestudiante" id="aestudiante" placeholder="Apellidos" class="form-control col-9">
                      </div>
                      <div class="form-group row">
                         <label for="" class="col-3 col-form-label">DNI:</label>
@@ -41,7 +42,17 @@
                      </div>
                      <div class="form-group row">
                         <label for="" class="col-3 col-form-label">Especialidad:</label>
-                        <input type="text" name="especialidad" id="especialidad" placeholder="Especialidad" class="form-control col-9">
+                        <select class="form-control col-9" name="especialidad" id="especialidad" >
+                            <option selected>Escoger...</option>
+                            <option value="1">Educación Inicial</option>
+                            <option value="2">Educación Primaria</option>
+                            <option value="3">Educ. Sec. Comunicación</option>
+                            <option value="4">Educ. Sec. Ciencias Sociales</option>
+                            <option value="5">Educ. Sec. CTA</option>
+                            <option value="6">Educ. Sec. Matemática</option>
+                            <option value="5">Computación e Informática</option>
+                            <option value="6">Educación Física</option>
+                        </select>
                      </div>
                      <div class="form-group row">
                        <label for="" class="col-3 col-form-label">Sexo:</label>
@@ -60,7 +71,6 @@
                         <select class="form-control col-9" name="departamento" id="departamento" >
                             <option selected>Escoger...</option>
                             <option value="1">Puno</option>
-                            <option value="2">Julica</option>
                         </select>
                      </div>
                      <div class="form-group row">
@@ -68,15 +78,18 @@
                         <select class="form-control col-9" name="provincia" id="provincia" >
                             <option selected>Escoger...</option>
                             <option value="1">Puno</option>
-                            <option value="2">Julica</option>
-                        </select>
-                     </div>
-                     <div class="form-group row">
-                        <label for="" class="col-3 col-form-label">Distrito:</label>
-                        <select class="form-control col-9" name="distrito" id="distrito" >
-                            <option selected>Escoger...</option>
-                            <option value="1">Puno</option>
-                            <option value="2">Julica</option>
+                            <option value="2">Azángaro</option>
+                            <option value="3">Carabaya</option>
+                            <option value="4">Chucuito</option>
+                            <option value="5">El Collao</option>
+                            <option value="6">Huancane</option>
+                            <option value="7">Lampa</option>
+                            <option value="8">Melgar</option>
+                            <option value="9">Moho</option>
+                            <option value="10">San Antonio de Putina</option>
+                            <option value="11">San Román</option>
+                            <option value="12">Sandia</option>
+                            <option value="13">Yunguyo</option>
                         </select>
                      </div>
                      <div class="form-group row">
@@ -92,7 +105,7 @@
                         <button class="btn btn-success" type="submit" value="Input">Editar</button>
                         <button class="btn btn-warning" type="submit" value="Input">Guardar</button>
                         <button class="btn btn-danger" type="reset" value="Rest">Eliminar</button>
-                        <button class="btn btn-info" type="reset" value="Input">Guardar</button>
+                        <button class="btn btn-info" type="reset" value="Input">Imprimir</button>
             </div>
 
              <div class="col-12">

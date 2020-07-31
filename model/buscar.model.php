@@ -39,14 +39,4 @@ class Buscar
     return $result;
   }
 
-  public function ListaDocente(){
-    $sql = "SELECT * FROM docente order by doc_apellidos;";
-
-    if (!$result = $this->conn->query($sql)) {
-      echo "Error listado:". mysqli_error($this->conn);
-    }
-
-    return $result;
-  }
-
 }

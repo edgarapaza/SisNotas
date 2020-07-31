@@ -1,10 +1,6 @@
 <?php
-include_once("header.php");
-require_once("../model/buscar.model.php");
-
-$docente = new Buscar();
-$datosd = $docente->ListaDocente();
-
+include("header.php");
+require("../model/buscar.model.php");
 
 @$idalumno = $_REQUEST['codestudiante'];
 
@@ -150,14 +146,36 @@ $dat_matriculas = $buscar->ShowMatriculados();
                       <label for="" class="col-4 col-form-label">Docente:</label>
                       <select class="form-control col-4" name="iddocente" id="iddocente" onchange="ShowSelected();" >
                           <option selected>Escoger...</option>
-                          <?php
-                          while ($filad = $datosd->fetch_array(MYSQLI_ASSOC)):
-                          ?>
-
-                          <option value="<?php echo $filad['iddoc'];?>">
-                          <?php echo $filad['doc_apellidos']. " ". $filad['doc_nombres'];?>
-                          </option>
-                          <?php endwhile;?>
+                          <option value="1">APAZA PINTO, Hernán Rolando</option>
+                          <option value="2">AYLLÓN GEMIO, Victor Orlando </option>
+                          <option value="3"> CARPIO MIRANDA, Nilda Marcela</option>
+                          <option value="3">MONTALVO GUTIERREZ, Eleazar Rafael 	</option>
+                          <option value="4">PAZO PRIETO, María Elena</option>
+                          <option value="5"> QUISPE APAZA, Luis</option>
+                          <option value="6">RAMOS ROJAS, María Nelly</option>
+                          <option value="7">ROJAS GORDILLO, Mirian María</option>
+                          <option value="8">ARDILES CATACORA, Marco Antonio</option>
+                          <option value="9">CASTILLO CÁCERES, Beltrán Erasmo</option>
+                          <option value="10">DELGADO RAMOS, Ricardo</option>
+                          <option value="11">PARICAHUA MAMANI, Vilma Rosaura</option>
+                          <option value="12">PINEDA MACEDO, Eliana Honoria</option>
+                          <option value="13">RAMIREZ RAMIREZ, Dominga Vianney </option>
+                          <option value="14">RAMOS ORTEGA, Roger Marco </option>
+                          <option value="15">VILCAPAZA CCUNO, Jesús</option>
+                          <option value="16">AROHUANCA QUISPE, Wilmer Andrés 	  </option>
+                          <option value="17">CHOQUE MAMANI, Seyli Niesleyni</option>
+                          <option value="18">MAMANI MARON, Beatríz Vilma</option>
+                          <option value="19">MANSILLA PARI, Juan José </option>
+                          <option value="20">OLIVERA CHURA, Javier David</option>
+                          <option value="21">PEREZ VALLE, Giuliana Claudia</option>
+                          <option value="22">TURPO AROQUIPA, Einar</option>
+                          <option value="23">CAZORLA AGUIRRE, Miriam Milagros</option>
+                          <option value="24">FLORES QUISPE, judith Gabriela</option>
+                          <option value="25">MAMANI PARI, German</option>
+                          <option value="26">OLIVERA CONDORI, Erika</option>
+                          <option value="27">PARI YANA, Yeni </option>
+                          <option value="28">ROJAS MAYTA, Celestina </option>
+                          <option value="29">VALVERDE HERRERA, Elizabeth Jesús</option>
                           <input type="hidden" name="docente" id="docente" placeholder="Nombre de docente"/>
                       </select>
                   </div>
@@ -168,7 +186,7 @@ $dat_matriculas = $buscar->ShowMatriculados();
 
                 <div class="botones text-center col-12">
 
-                    <a href="usuario.php" class="btn btn-success">Nuevo Alumno</a>
+                    <a href="newalumno.php" class="btn btn-success">Nuevo Alumno</a>
 
                     <button class="btn btn-warning" type="submit" id="btnGuardar">Guardar Matricula</button>
                     <!-- <button class="btn btn-danger" type="reset" id="btn">Eliminar</button> -->

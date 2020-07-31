@@ -38,9 +38,6 @@
             <li class="nav-item">
               <a class="nav-link" href="matricula.php">Matriculas</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contraseña.php">Cambiar Contraseña</a>
-            </li>
           </ul>
           <ul class="navbar-nav">
             <li class="nav-item">

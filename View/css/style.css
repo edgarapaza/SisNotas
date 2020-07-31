@@ -4,7 +4,7 @@
 
 /* ---------------- Incio --------------*/
 body{
-  background: url(../img/fondo.jpg) no-repeat center center fixed;
+  background: url(../img/fondoprincipal2.png) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -16,7 +16,7 @@ body{
 }
 
 .modal-content{
-  opacity: .55;
+  opacity: .70;
   padding: 0 5px;
   box-shadow: 0px 0px 3px #848484 ;
 }
@@ -27,7 +27,7 @@ body{
 }
 
 .user-img img{
-  width: 120px;
+  width: 130px;
   height: 120px;
   box-shadow: 0px 0px 3px #848484;
   border-radius: 50%;
@@ -49,13 +49,9 @@ body{
   padding-top: 4px;
 }
 
-.form-group#user-group::before{
-  content: "\f007";
-}
 
-.form-group#contrasena-group::before{
-  content: "\f007";
-}
+
+
 
 button{
   width: 80%;
